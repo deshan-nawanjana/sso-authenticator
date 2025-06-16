@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./index.svg" type="image/svg+xml">
+  <!-- style -->
+  <link rel="stylesheet" href="./index.css">
+  <!-- script -->
+  <script src="./index.js"></script>
+  <!-- page title -->
+  <title>SSO Authenticator</title>
+</head>
+<body>
+  <!-- login buttons -->
+  <div class="login-buttons">
+    <div class="buttons-group">
+      <button onclick="login('google')" class="icon-google">
+        Sign in with Google
+      </button>
+      <button onclick="login('facebook')" class="icon-facebook">
+        Sign in with Facebook
+      </button>
+      <button onclick="login('twitter')" class="icon-twitter">
+        Sign in with Twitter
+      </button>
+      <button onclick="login('linkedin')" class="icon-linkedin">
+        Sign in with LinkedIn
+      </button>
+      <button onclick="login('yahoo')" class="icon-yahoo">
+        Sign in with Yahoo
+      </button>
+    </div>
+    <div class="buttons-group">
+      <button onclick="login('github')" class="icon-github">
+        Sign in with GitHub
+      </button>
+      <button onclick="login('gitlab')" class="icon-gitlab">
+        Sign in with GitLab
+      </button>
+      <button onclick="login('discord')" class="icon-discord">
+        Sign in with Discord
+      </button>
+      <button onclick="login('spotify')" class="icon-spotify">
+        Sign in with Spotify
+      </button>
+      <button onclick="login('dropbox')" class="icon-dropbox">
+        Sign in with Dropbox
+      </button>
+    </div>
+  </div>
+  <!-- user details -->
+  <div class="user-details">
+    <div class="details-header">
+      <div id="user-client"></div>
+      <div id="user-name"></div>
+    </div>
+    <div class="details-content">
+      <div id="user-id"></div>
+      <div id="user-email"></div>
+    </div>
+    <div class="details-footer">
+      <button class="logout" onclick="logout()">
+        Logout
+      </button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,269 @@
+* {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root {
+  --google-color: #EA4335;
+  --facebook-color: #1877F2;
+  --twitter-color: #222222;
+  --twitter-color: #252525;
+  --linkedin-color: #0E76A8;
+  --yahoo-color: #5110a1;
+  --github-color: #2EA44F;
+  --gitlab-color: #E85B15;
+  --discord-color: #6A5ACD;
+  --spotify-color: #17aa4d;
+  --dropbox-color: #0061FE;
+  --google-logo: url(./assets/logos/google.svg);
+  --facebook-logo: url(./assets/logos/facebook.svg);
+  --twitter-logo: url(./assets/logos/twitter.svg);
+  --linkedin-logo: url(./assets/logos/linkedin.svg);
+  --yahoo-logo: url(./assets/logos/yahoo.svg);
+  --github-logo: url(./assets/logos/github.svg);
+  --gitlab-logo: url(./assets/logos/gitlab.svg);
+  --discord-logo: url(./assets/logos/discord.svg);
+  --spotify-logo: url(./assets/logos/spotify.svg);
+  --dropbox-logo: url(./assets/logos/dropbox.svg);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #121212;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+}
+
+body[data-loading] {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px auto;
+  background-image: url(./assets/spinner.svg);
+}
+
+body[data-loading] * {
+  display: none;
+}
+
+.login-buttons {
+  display: none;
+  flex-direction: row;
+  gap: 12px;
+}
+
+[data-section="login"] .login-buttons {
+  display: flex;
+}
+
+.buttons-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (max-width: 530px) {
+  .login-buttons {
+    flex-direction: column;
+  }
+}
+
+[data-section="user"] .user-details {
+  display: flex;
+}
+
+.icon-google {
+  background-color: var(--google-color);
+  background-image: var(--google-logo);
+}
+
+.icon-facebook {
+  background-color: var(--facebook-color);
+  background-image: var(--facebook-logo);
+}
+
+.icon-twitter {
+  background-color: var(--twitter-color);
+  background-image: var(--twitter-logo);
+}
+
+.icon-linkedin {
+  background-color: var(--linkedin-color);
+  background-image: var(--linkedin-logo);
+}
+
+.icon-yahoo {
+  background-color: var(--yahoo-color);
+  background-image: var(--yahoo-logo);
+}
+
+.icon-github {
+  background-color: var(--github-color);
+  background-image: var(--github-logo);
+}
+
+.icon-gitlab {
+  background-color: var(--gitlab-color);
+  background-image: var(--gitlab-logo);
+}
+
+.icon-discord {
+  background-color: var(--discord-color);
+  background-image: var(--discord-logo);
+}
+
+.icon-spotify {
+  background-color: var(--spotify-color);
+  background-image: var(--spotify-logo);
+}
+
+.icon-dropbox {
+  background-color: var(--dropbox-color);
+  background-image: var(--dropbox-logo);
+}
+
+.login-buttons button {
+  height: 45px;
+  padding: 0px 16px 0px 42px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: left;
+  border: 2px solid #121212;
+  outline: 2px solid transparent;
+  transition: all 0.2s;
+  background-position: 10px center;
+  background-size: 24px auto;
+  background-repeat: no-repeat;
+  text-wrap: nowrap;
+}
+
+.login-buttons button:active {
+  box-shadow: inset 0px 2px 4px #0003;
+}
+
+.login-buttons button.icon-google:focus {
+  outline: 2px solid var(--google-color);
+}
+
+.login-buttons button.icon-facebook:focus {
+  outline: 2px solid var(--facebook-color);
+}
+
+.login-buttons button.icon-twitter:focus {
+  outline: 2px solid var(--twitter-color);
+}
+
+.login-buttons button.icon-linkedin:focus {
+  outline: 2px solid var(--linkedin-color);
+}
+
+.login-buttons button.icon-yahoo:focus {
+  outline: 2px solid var(--yahoo-color);
+}
+
+.login-buttons button.icon-github:focus {
+  outline: 2px solid var(--github-color);
+}
+
+.login-buttons button.icon-gitlab:focus {
+  outline: 2px solid var(--gitlab-color);
+}
+
+.login-buttons button.icon-discord:focus {
+  outline: 2px solid var(--discord-color);
+}
+
+.login-buttons button.icon-spotify:focus {
+  outline: 2px solid var(--spotify-color);
+}
+
+.login-buttons button.icon-dropbox:focus {
+  outline: 2px solid var(--dropbox-color);
+}
+
+.user-details {
+  display: none;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.details-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #EEEEEE;
+}
+
+#user-client {
+  height: 45px;
+  width: 45px;
+  background-position: center;
+  background-size: 24px auto;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+.details-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.details-content div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #AAAAAA;
+  font-size: 14px;
+}
+
+.details-content div::before {
+  background-color: #FFF2;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  width: 30px;
+  text-align: center;
+}
+
+#user-id::before {
+  content: "ID";
+}
+
+#user-email::before {
+  content: "Email";
+}
+
+.details-footer {
+  padding-top: 10px;
+}
+
+.logout {
+  height: 40px;
+  padding: 0px 16px;
+  width: 100px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #C82F22;
+  color: #FFFFFF;
+  border: 2px solid #121212;
+  outline: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.logout:active {
+  box-shadow: inset 0px 2px 4px #0003;
+}
+
+.logout:focus {
+  outline: 2px solid #C82F22;
+}
