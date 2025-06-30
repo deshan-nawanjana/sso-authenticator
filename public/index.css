@@ -16,6 +16,7 @@
   --discord-color: #6A5ACD;
   --spotify-color: #17aa4d;
   --dropbox-color: #0061FE;
+  --tiktok-color: #FE2C55;
   --google-logo: url(./assets/logos/google.svg);
   --facebook-logo: url(./assets/logos/facebook.svg);
   --twitter-logo: url(./assets/logos/twitter.svg);
@@ -26,6 +27,7 @@
   --discord-logo: url(./assets/logos/discord.svg);
   --spotify-logo: url(./assets/logos/spotify.svg);
   --dropbox-logo: url(./assets/logos/dropbox.svg);
+  --tiktok-logo: url(./assets/logos/tiktok.svg);
 }
 
 body {
@@ -126,6 +128,11 @@ body[data-loading] * {
   background-image: var(--dropbox-logo);
 }
 
+.icon-tiktok {
+  background-color: var(--tiktok-color);
+  background-image: var(--tiktok-logo);
+}
+
 .login-buttons button {
   height: 45px;
   padding: 0px 16px 0px 42px;
@@ -185,6 +192,10 @@ body[data-loading] * {
 
 .login-buttons button.icon-dropbox:focus {
   outline: 2px solid var(--dropbox-color);
+}
+
+.login-buttons button.icon-tiktok:focus {
+  outline: 2px solid var(--tiktok-color);
 }
 
 .user-details {

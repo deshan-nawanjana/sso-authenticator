@@ -80,6 +80,14 @@
         "client_secret": "DROPBOX_CLIENT_SECRET",
         "redirect_uri": "https://localhost/api/sso/callback/dropbox"
       }
+    },
+    {
+      "id": "tiktok",
+      "env": {
+        "client_id": "TIKTOK_CLIENT_ID",
+        "client_secret": "TIKTOK_CLIENT_SECRET",
+        "redirect_uri": "https://localhost/api/sso/callback/tiktok"
+      }
     }
   ]
 }

@@ -14,20 +14,25 @@ const gitlab = require("./clients/gitlab")
 const discord = require("./clients/discord")
 const spotify = require("./clients/spotify")
 const dropbox = require("./clients/dropbox")
+const tiktok = require("./clients/tiktok")
 
 // authentication clients
-const clients = { google, facebook, twitter, linkedin, yahoo, github, gitlab, discord, spotify, dropbox }
+const clients = {
+  google,
+  facebook,
+  twitter,
+  linkedin,
+  yahoo,
+  github,
+  gitlab,
+  discord,
+  spotify,
+  dropbox,
+  tiktok
+}
 
 // load server config
 const config = JSON.parse(fs.readFileSync("config.json"))
-
-// create message script
-const message = `
-<script>
-  (window.opener || window.parent).postMessage(JSON, "${config.origin}")
-  window.close()
-</script>
-`
 
 // create express app
 const app = express()

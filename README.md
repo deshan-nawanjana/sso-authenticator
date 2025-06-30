@@ -23,6 +23,7 @@ A lightweight and extensible Single Sign-On (SSO) authentication service built w
 | Discord       | `discord`   | [Discord OAuth Docs](https://discord.com/developers/docs/topics/oauth2)                                         |
 | Spotify       | `spotify`   | [Spotify OAuth Docs](https://developer.spotify.com/documentation/web-api/tutorials/code-flow)                   |
 | Dropbox       | `dropbox`   | [Dropbox OAuth Docs](https://developers.dropbox.com/oauth-guide)                                                |
+| TikTok        | `tiktok`    | [TikTok OAuth Docs](https://developers.tiktok.com/doc/login-kit-web/)                                           |
 
 ## ⚙️ `config.json` Configuration Guide
 
