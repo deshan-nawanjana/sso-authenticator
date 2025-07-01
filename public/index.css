@@ -7,7 +7,6 @@
 :root {
   --google-color: #EA4335;
   --facebook-color: #1877F2;
-  --twitter-color: #222222;
   --twitter-color: #252525;
   --linkedin-color: #0E76A8;
   --yahoo-color: #5110a1;
@@ -17,6 +16,7 @@
   --spotify-color: #17aa4d;
   --dropbox-color: #0061FE;
   --tiktok-color: #FE2C55;
+  --apple-color: #222222;
   --google-logo: url(./assets/logos/google.svg);
   --facebook-logo: url(./assets/logos/facebook.svg);
   --twitter-logo: url(./assets/logos/twitter.svg);
@@ -28,6 +28,7 @@
   --spotify-logo: url(./assets/logos/spotify.svg);
   --dropbox-logo: url(./assets/logos/dropbox.svg);
   --tiktok-logo: url(./assets/logos/tiktok.svg);
+  --apple-logo: url(./assets/logos/apple.svg);
 }
 
 body {
@@ -133,6 +134,11 @@ body[data-loading] * {
   background-image: var(--tiktok-logo);
 }
 
+.icon-apple {
+  background-color: var(--apple-color);
+  background-image: var(--apple-logo);
+}
+
 .login-buttons button {
   height: 45px;
   padding: 0px 16px 0px 42px;
@@ -196,6 +202,10 @@ body[data-loading] * {
 
 .login-buttons button.icon-tiktok:focus {
   outline: 2px solid var(--tiktok-color);
+}
+
+.login-buttons button.icon-apple:focus {
+  outline: 2px solid var(--apple-color);
 }
 
 .user-details {

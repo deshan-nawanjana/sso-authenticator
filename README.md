@@ -1,6 +1,6 @@
 # 🔐 SSO Authenticator
 
-A lightweight and extensible Single Sign-On (SSO) authentication service built with Node.js and Express, supporting multiple OAuth 2.0 providers including Google, Facebook, Twitter, LinkedIn, Yahoo, GitHub, GitLab, Discord, Spotify, and Dropbox.
+A lightweight and extensible Single Sign-On (SSO) authentication service built with Node.js and Express, supporting multiple OAuth 2.0 providers including Google, Facebook, Twitter, LinkedIn, Yahoo, GitHub, GitLab, Discord, Spotify, Dropbox, TikTok, and Apple.
 
 ### ✨ Features
 
@@ -24,6 +24,7 @@ A lightweight and extensible Single Sign-On (SSO) authentication service built w
 | Spotify       | `spotify`   | [Spotify OAuth Docs](https://developer.spotify.com/documentation/web-api/tutorials/code-flow)                   |
 | Dropbox       | `dropbox`   | [Dropbox OAuth Docs](https://developers.dropbox.com/oauth-guide)                                                |
 | TikTok        | `tiktok`    | [TikTok OAuth Docs](https://developers.tiktok.com/doc/login-kit-web/)                                           |
+| Apple         | `apple`     | [Apple OAuth Docs](https://developer.apple.com/documentation/signinwithapplerestapi)                            |
 
 ## ⚙️ `config.json` Configuration Guide
 

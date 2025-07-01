@@ -15,6 +15,7 @@ const discord = require("./clients/discord")
 const spotify = require("./clients/spotify")
 const dropbox = require("./clients/dropbox")
 const tiktok = require("./clients/tiktok")
+const apple = require("./clients/apple")
 
 // authentication clients
 const clients = {
@@ -28,7 +29,8 @@ const clients = {
   discord,
   spotify,
   dropbox,
-  tiktok
+  tiktok,
+  apple
 }
 
 // load server config

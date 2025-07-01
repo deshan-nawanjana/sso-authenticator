@@ -28,8 +28,10 @@ const fetchUser = async () => {
   document.body.setAttribute("data-loading", "")
   // get sso details from storage
   const data = JSON.parse(localStorage.getItem("sso-details"))
+  // get url query
+  const query = data.data.id_token ? `?id_token=${data.data.id_token}` : ""
   // fetch user details
-  const user = await fetch("/api/sso/user/" + data.client, {
+  const user = await fetch(`/api/sso/user/${data.client}${query}`, {
     headers: { Authorization: "Bearer " + data.data.access_token }
   }).then(resp => resp.json())
   // check response
@@ -37,7 +39,7 @@ const fetchUser = async () => {
     // set user details
     document.querySelector("#user-client").className = "icon-" + data.client
     document.querySelector("#user-id").innerHTML = user.data.id || "N/A"
-    document.querySelector("#user-name").innerHTML = user.data.name || "N/A"
+    document.querySelector("#user-name").innerHTML = user.data.name || user.data.email || "N/A"
     document.querySelector("#user-email").innerHTML = user.data.email || "N/A"
     // switch to user details
     document.body.setAttribute("data-section", "user")

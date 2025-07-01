@@ -88,6 +88,16 @@
         "client_secret": "TIKTOK_CLIENT_SECRET",
         "redirect_uri": "https://localhost/api/sso/callback/tiktok"
       }
+    },
+    {
+      "id": "apple",
+      "env": {
+        "client_id": "APPLE_CLIENT_ID",
+        "team_id": "APPLE_TEAM_ID",
+        "key_id": "APPLE_KEY_ID",
+        "auth_key": "-----BEGIN PRIVATE KEY-----\nP8_KEY_DATA\n-----END PRIVATE KEY-----",
+        "redirect_uri": "https://localhost/api/sso/callback/apple"
+      }
     }
   ]
 }
